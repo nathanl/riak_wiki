@@ -21,6 +21,8 @@ $ wget http://downloads.basho.com/riak/riak-1.0.2/riak_1.0.2-1_i386.deb
 $ sudo dpkg -i riak_1.0.2-1_i386.deb
 ```
 
+The installation process will create a user named `riak`, but you will need to to create /home/riak and run `chown riak:riak /home/riak` before running `riak start`.
+
 h2. From source
 
 Riak requires [[Erlang|http://www.erlang.org/]] R14B03 or later. If you do not have Erlang already installed, see [[Installing Erlang]]. Don't worry, it's easy!
